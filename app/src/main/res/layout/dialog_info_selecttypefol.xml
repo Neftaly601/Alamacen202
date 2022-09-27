@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/AzulBack"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Seleccione..."
+            android:textColor="#000000"
+            android:textSize="20dp"></TextView>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundbutton"
+            android:backgroundTint="@color/AzulBack"
+            android:onClick="MISFOLIOS"
+            android:layout_gravity="center"
+            android:text="MIS FOLIOS ASIGNADOS"
+            android:textColor="@color/ColorWhite"></Button>
+
+
+        <Button
+            android:id="@+id/btnTF"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundbutton"
+            android:backgroundTint="@color/AzulBack"
+            android:layout_gravity="center"
+            android:onClick="TODFOLIOS"
+            android:text="TODOS LOS FOLIOS"
+            android:textColor="@color/ColorWhite"></Button>
+
+        <Button
+            android:id="@+id/btnESCA"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundbutton"
+            android:backgroundTint="@color/AzulBack"
+            android:onClick="EscanearFolio"
+            android:layout_gravity="center"
+            android:text="ESCANEAR"
+            android:textColor="@color/ColorWhite"></Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/AzulBack"></View>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

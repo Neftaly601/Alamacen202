@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.ActivityLiberaciones">
+
+    <include layout="@layout/action_bar_toolbar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/Escanearbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/AzulBack"
+                        android:onClick="TODFOLIOS"
+                        android:text="@string/folios"
+                        android:textColor="@color/ColorWhite"
+                        android:textSize="14sp"
+                        app:icon="@drawable/icons8_lupa"
+                        app:iconTint="@null" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtFolio"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Folio"
+                            android:textColor="#FF0000"
+                            android:textSize="20dp"
+                            tools:ignore="Suspicious0dp" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtFolioEscaneado"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:autoSizeTextType="uniform"
+                                android:hint="Clave Escaneda"
+                                android:inputType="text"
+                                android:textSize="12dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/AzulBack" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Provedor"
+                android:maxLines="1"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtProvedor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edArticulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:autoSizeTextType="uniform"
+                    android:hint="Clave Escaneda"
+                    android:inputType="text"
+                    android:textSize="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/AzulBack" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lisRecepcion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+            </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

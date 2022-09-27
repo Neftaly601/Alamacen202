@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/AzulBack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/AzulBack" />
+
+            <TextView
+                android:id="@+id/txtRAlmacen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Almacen"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+
+                android:background="@color/AzulBack" />
+
+            <TextView
+                android:id="@+id/txtRexistencia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Existencia"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/AzulBack" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/AzulBack" />
+
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Almacen Kepler</string>
+    <string name="buscar">Buscar</string>
+    <string name="version_1_6">Version 1.7.2</string>
+    <string name="usuario">Usuario</string>
+    <string name="escanear">Escanear</string>
+    <string name="comprometidas">COMPROMETIDAS</string>
+    <string name="ubicacion">UBICACION</string>
+    <string name="existencia">EXISTENCIA</string>
+    <string name="clave_escaneda">Clave Escaneda</string>
+    <string name="producto">Producto</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="linea">Linea</string>
+    <string name="disponibilidad">Disponibilidad</string>
+    <string name="almacen">Almacen</string>
+    <string name="folio">Folio</string>
+    <string name="documento">Documento</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="fecha">Fecha</string>
+    <string name="tipo">Tipo</string>
+    <string name="folios">Folios</string>
+    <string name="via_de_embarque">Via de Embarque</string>
+    <string name="anterior">Anterior</string>
+    <string name="guardadatos">GuardaDatos</string>
+    <string name="sincronizar_a_kepler">Sincronizar a Kepler</string>
+    <string name="roda">RODA</string>
+    <string name="tg">TG</string>
+    <string name="ah">AH</string>
+    <string name="modo_manual">Modo Manual</string>
+    <string name="guardar">Guardar</string>
+    <string name="sincronizar">Sincronizar</string>
+    <string name="fechaI">Fecha Inicio</string>
+    <string name="horaI">Hora Inicio</string>
+    <string name="termina">Cerrar Folio</string>
+</resources>

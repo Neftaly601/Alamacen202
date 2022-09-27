@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/AzulBack"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="onClickLista">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/AzulBack"/>
+        <TextView
+            android:id="@+id/tvNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.6"
+            android:layout_margin="2dp"
+            android:layout_gravity="center_vertical"
+            android:text="No."
+            android:textSize="10sp"
+            android:textColor="@color/Amarillo"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/AzulBack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvIdProd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="center_vertical"
+                android:text="ID ART"
+                android:textSize="10sp"
+                android:textColor="@color/AzulBack"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvDescrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:gravity="start"
+                android:text="DESCRIPCIÓN"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:lines="4"
+                android:maxLines="4"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:background="@color/AzulBack" />
+
+        <TextView
+            android:id="@+id/tvUbica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:text="Ubicacion"
+            android:textSize="10sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:maxLines="2"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:background="@color/AzulBack" />
+
+        <TextView
+            android:id="@+id/tvClasif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="2.5"
+            android:layout_gravity="center_vertical"
+            android:text="Clasif"
+            android:textSize="10sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/AzulBack"/>
+
+        <TextView
+            android:id="@+id/tvRack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="2.2"
+            android:layout_gravity="center_vertical"
+            android:text="Rack"
+            android:textSize="10sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/AzulBack"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/AzulBack"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/AzulBack"/>
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="Fecha"
+            android:textSize="10sp"
+            android:textColor="@color/AzulBack"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/tvHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:text="Hora"
+            android:textSize="10sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+        <ImageButton
+            android:id="@+id/ibRevisado"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/icon_seleccionar"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#009688"
+            android:visibility="invisible"/>
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/AzulBack"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/AzulBack"/>
+</LinearLayout>
+
+
+

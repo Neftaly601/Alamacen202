@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvClvProdDial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clave Producto"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/tvDescProdDial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripcion Producto"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/AzulBack"
+                android:maxLines="3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/AzulBack"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="UBICACIONES"
+                        android:textColor="@color/AzulBack"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:id="@+id/tvOrigenR"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/AzulBack"
+                        android:textStyle="bold"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="#E6F1FB"
+                        android:paddingLeft="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cant. Ubic."
+                        android:textColor="@color/AzulBack"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tvCantOrig"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:backgroundTint="@color/ColorGris"
+                        android:background="@drawable/roundbutton"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/AzulBack"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Necesidad"
+                        android:textColor="@color/Amarillo"
+                        android:textSize="12dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tvNecesidad"
+                        android:text="0"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textColor="@color/AzulBack"
+                        android:textStyle="bold"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="#E6F1FB"
+                        android:enabled="false"
+                        android:paddingLeft="5dp"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DESTINO"
+                        android:textColor="@color/AzulBack"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:text="EMPAQUE"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/AzulBack"
+                        android:textStyle="bold"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="#E6F1FB"
+                        android:paddingLeft="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Cantidad en Empaque"
+                        android:textColor="@color/AzulBack"
+                        android:textSize="12dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvCantEmpq"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:backgroundTint="@color/ColorGris"
+                        android:background="@drawable/roundbutton"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/AzulBack"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Cantidad a trasladar"
+                        android:textColor="@color/AzulBack"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/txtDestEmpq"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="#EBF1F0"
+                        android:digits="0123456789"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

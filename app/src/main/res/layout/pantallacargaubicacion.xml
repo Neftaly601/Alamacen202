@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/AzulBack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="CAMBIAR LA UBICACION"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"></TextView>
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="160dp"
+            android:layout_height="149dp"
+            android:src="@drawable/animation_300_krdmxugx"></pl.droidsonroids.gif.GifImageView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginLeft="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtUbicacionIsla"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:autoSizeTextType="uniform"
+                android:hint="Clave Escaneda"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CANCELAR"
+            android:onClick="cancelar"
+
+            ></Button>
+
+
+        <View
+            android:layout_width="160dp"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/AzulBack" />
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

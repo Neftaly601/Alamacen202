@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.ActivityConsultaPA">
+
+    <include layout="@layout/action_bar_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="2dp"
+                        android:layout_height="2dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ETProducto"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:hint="@string/clave_escaneda"
+                            android:inputType="text"
+                            android:textSize="12sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="@string/producto"
+                        android:maxLines="1"
+                        app:boxBackgroundMode="outline"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:startIconTint="@null">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtEscaner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textSize="10sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/Escanearbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundbutton"
+                    android:backgroundTint="@color/Amarillo"
+                    android:onClick="Escanear"
+                    android:text="@string/escanear"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundbutton"
+                android:backgroundTint="@color/AzulBack"
+                android:onClick="FirtMet"
+                android:text="@string/buscar"
+                android:textColor="@color/ColorWhite"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/AzulBack" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="@string/descripcion"
+                        android:maxLines="1"
+                        app:boxBackgroundMode="outline"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:startIconTint="@null">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtDescripcion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:clickable="true"
+                            android:maxLines="1"
+                            android:imeOptions="actionDone"
+                            android:focusable="false"
+                            android:textSize="10sp"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="@string/linea"
+                        android:maxLines="1"
+                        app:boxBackgroundMode="outline"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:startIconTint="@null">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtLinea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:clickable="true"
+                            android:maxLines="1"
+                            android:imeOptions="actionDone"
+                            android:focusable="false"
+                            android:textSize="10sp"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="@string/disponibilidad"
+                        android:maxLines="1"
+                        app:boxBackgroundMode="outline"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:startIconTint="@null">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtDiponibilidad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:clickable="true"
+                            android:maxLines="1"
+                            android:imeOptions="actionDone"
+                            android:focusable="false"
+                            android:textSize="10sp"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageVi"
+                    android:layout_width="0dp"
+                    android:layout_height="147dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logokepler" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundbutton"
+                    android:maxLines="1"
+                    android:onClick="tablaComprometidas"
+                    android:text="@string/comprometidas"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="8sp"
+                    app:icon="@drawable/colaboracion"
+                    app:iconTint="@null" />
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="start"
+                    android:maxLines="1"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/roundbutton"
+                    android:onClick="tablasExistencia"
+                    android:textSize="8sp"
+                    android:text="@string/existencia"
+                    android:textColor="@color/cardview_light_background"
+                    app:icon="@drawable/icons_carro_de_elevaci_n_aqu_"
+                    app:iconTint="@null"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="start"
+                    android:maxLines="1"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/roundbutton"
+                    android:onClick="tablasUbicacion"
+                    android:textSize="8sp"
+                    android:text="@string/ubicacion"
+                    android:textColor="@color/cardview_light_background"
+                    app:icon="@drawable/icons_fork_lift"
+                    app:iconTint="@null"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nomTabla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/existencia"
+                    android:textColor="@color/AzulBack"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ExistenciatoolBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/AzulBack"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/almacen"
+                            android:textColor="@color/ColorWhite"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/existencia"
+                            android:textColor="@color/ColorWhite"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ComprometidastoolBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/AzulBack"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5sp"
+                            android:layout_weight="1"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:text="@string/folio"
+                            android:textColor="@color/ColorWhite"
+                            android:textStyle="bold"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Cliente"
+                            android:textColor="@color/ColorWhite"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5sp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/cantidad"
+                            android:textSize="12sp"
+                            android:textColor="@color/ColorWhite"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5sp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/fecha"
+                            android:textSize="12sp"
+                            android:textColor="@color/ColorWhite"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5sp"
+                            android:singleLine="true"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:text="@string/documento"
+                            android:textColor="@color/ColorWhite"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/UbicacionToolBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/AzulBack"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.3"
+                            android:gravity="center"
+                            android:text="@string/ubicacion"
+                            android:textColor="@color/ColorWhite"
+                            android:textStyle="bold"
+
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/cantidad"
+                            android:textColor="@color/ColorWhite"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/fecha"
+                            android:textColor="@color/ColorWhite"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/tipo"
+                            android:textColor="@color/ColorWhite"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lisFacturas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

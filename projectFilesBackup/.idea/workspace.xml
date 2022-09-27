@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="All Places" />
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel" />
+        <device id="Nexus 5X" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3abe9388-bdf1-4b16-b0bc-c94c42908945" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pa26QfcyUh0MkuRYvhI04JJDlz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="algorithm" value="Scalr" />
+    <property name="android-custom-viewC:/Users/j_are/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="destination" value="DRAWABLE" />
+    <property name="format" value="PNG" />
+    <property name="lastFolderRoot" value="$PROJECT_DIR$/../../Pictures/UberClone/icons-muro-de-pago.png" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="method" value="Automatic" />
+    <property name="multi-representation-previewC:/Users/j_are/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="resolutions" value="MDPI&#10;LDPI&#10;XXXHDPI&#10;HDPI&#10;XHDPI&#10;XXHDPI" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="sourceResolution" value="XHDPI" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\j_are\OneDrive\Escritorio\Proyecto Almacen\app\src\main\res\drawable-mdpi" />
+    </key>
+    <key name="android.template.-588989468">
+      <recent name="com.almacen.alamacen202" />
+    </key>
+    <key name="android.template.1525085047">
+      <recent name="com.almacen.alamacen202" />
+    </key>
+    <key name="android.template.1771446684">
+      <recent name="com.almacen.alamacen202.Activity" />
+      <recent name="com.almacen.alamacen202" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.almacen.alamacen202.activity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\j_are\OneDrive\Escritorio\Proyecto Almacen\app\src\main\res\layout" />
+      <recent name="C:\Users\j_are\OneDrive\Escritorio\Proyecto Almacen\app\src\main\res\menu" />
+      <recent name="C:\Users\j_are\OneDrive\Escritorio\Proyecto Almacen\app\src\main\res\drawable" />
+      <recent name="C:\Users\j_are\OneDrive\Escritorio\Proyecto Almacen\app\src\main\java\com\almacen\alamacen202\Imprecion" />
+      <recent name="C:\Users\j_are\OneDrive\Escritorio\Proyecto Almacen\app\src\main\res\raw" />
+    </key>
+    <key name="android.template.447825250">
+      <recent name="com.almacen.alamacen202" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.almacen.alamacen202.includes" />
+      <recent name="com.almacen.alamacen202.Adapter" />
+      <recent name="com.almacen.alamacen202.XML" />
+      <recent name="com.almacen.alamacen202.SetterandGetters" />
+      <recent name="com.almacen.alamacen202.Activity" />
+    </key>
+    <key name="android.template.-1356997406">
+      <recent name="com.almacen.alamacen202" />
+    </key>
+    <key name="android.template.-1202441424">
+      <recent name="com.almacen.alamacen202" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Alamacen202.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="drawable-xhdpi.* and 8 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Alamacen202.app" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="drawable-xhdpi.*" />
+        <pattern testClass="drawable.*" />
+        <pattern testClass="drawable-xxxhdpi.*" />
+        <pattern testClass="drawable-mdpi.*" />
+        <pattern testClass="drawable-xxhdpi.*" />
+        <pattern testClass="drawable-hdpi.*" />
+        <pattern testClass="drawable-v24.*" />
+        <pattern testClass="drawable-ldpi.*" />
+        <pattern testClass="drawable-tvdpi.*" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3abe9388-bdf1-4b16-b0bc-c94c42908945" name="Default Changelist" comment="" />
+      <created>1615406704903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615406704903</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1629744549718">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="149" key="#com.intellij.ide.util.MemberChooser/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629744549718" />
+    <state x="743" y="393" width="442" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1629566993196">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="743" y="393" width="442" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629566993196" />
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1629481872087">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629481872087" />
+    <state x="794" y="314" key="AndroidCreateXmlResourceDialog" timestamp="1629214779807">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="314" key="AndroidCreateXmlResourceDialog/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629214779807" />
+    <state x="963" y="215" key="FileChooserDialogImpl" timestamp="1627917650145">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="685" y="151" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1626397187130" />
+    <state x="963" y="215" key="FileChooserDialogImpl/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1627917650145" />
+    <state width="1876" height="498" key="GridCell.Tab.0.bottom" timestamp="1634849055556">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1322" height="24" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1629684070423" />
+    <state width="1876" height="498" key="GridCell.Tab.0.bottom/1920.194.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1634849055556" />
+    <state width="1876" height="330" key="GridCell.Tab.0.bottom/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629756981362" />
+    <state width="1876" height="498" key="GridCell.Tab.0.center" timestamp="1634849055555">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1322" height="24" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1629684070422" />
+    <state width="1876" height="498" key="GridCell.Tab.0.center/1920.194.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1634849055555" />
+    <state width="1876" height="330" key="GridCell.Tab.0.center/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629756981362" />
+    <state width="1876" height="498" key="GridCell.Tab.0.left" timestamp="1634849055555">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1322" height="24" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1629684070422" />
+    <state width="1876" height="498" key="GridCell.Tab.0.left/1920.194.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1634849055555" />
+    <state width="1876" height="330" key="GridCell.Tab.0.left/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629756981361" />
+    <state width="1876" height="498" key="GridCell.Tab.0.right" timestamp="1634849055556">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1322" height="24" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1629684070423" />
+    <state width="1876" height="498" key="GridCell.Tab.0.right/1920.194.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1634849055556" />
+    <state width="1876" height="330" key="GridCell.Tab.0.right/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629756981362" />
+    <state width="1876" height="46" key="GridCell.Tab.1.bottom" timestamp="1634847839301">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1322" height="308" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1628722470628" />
+    <state width="1876" height="46" key="GridCell.Tab.1.bottom/1920.194.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1634847839301" />
+    <state width="1876" height="330" key="GridCell.Tab.1.bottom/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629756981363" />
+    <state width="1876" height="46" key="GridCell.Tab.1.center" timestamp="1634847839301">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1322" height="308" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1628722470628" />
+    <state width="1876" height="46" key="GridCell.Tab.1.center/1920.194.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1634847839301" />
+    <state width="1876" height="330" key="GridCell.Tab.1.center/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629756981362" />
+    <state width="1876" height="46" key="GridCell.Tab.1.left" timestamp="1634847839301">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1322" height="308" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1628722470628" />
+    <state width="1876" height="46" key="GridCell.Tab.1.left/1920.194.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1634847839301" />
+    <state width="1876" height="330" key="GridCell.Tab.1.left/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629756981362" />
+    <state width="1876" height="46" key="GridCell.Tab.1.right" timestamp="1634847839301">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1322" height="308" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1628722470628" />
+    <state width="1876" height="46" key="GridCell.Tab.1.right/1920.194.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1634847839301" />
+    <state width="1876" height="330" key="GridCell.Tab.1.right/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629756981362" />
+    <state width="968" height="533" key="XDebugger.FullValuePopup" timestamp="1627073640167">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="968" height="533" key="XDebugger.FullValuePopup/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1627073640167" />
+    <state x="701" y="208" key="chooseDestDirectoryDialog" timestamp="1628112883601">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="499" y="146" key="chooseDestDirectoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1626489461439" />
+    <state x="701" y="208" key="chooseDestDirectoryDialog/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1628112883601" />
+    <state x="-7" y="0" width="1378" height="745" key="dock-window-1" timestamp="1628718916402">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-7" y="0" width="1378" height="745" key="dock-window-1/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1628718916402" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1629745946487">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1629745946487" />
+    <state x="486" y="84" width="945" height="965" key="search.everywhere.popup" timestamp="1627326101424">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="486" y="84" width="945" height="965" key="search.everywhere.popup/1920.314.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1627326101424" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/MainActivity.java</url>
+          <line>178</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/MainActivity.java</url>
+          <line>273</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/MainActivity.java</url>
+          <line>351</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/MainActivity.java</url>
+          <line>246</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityConsultaPA.java</url>
+          <line>479</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityConsultaPA.java</url>
+          <line>457</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/MainActivity.java</url>
+          <line>183</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/MainActivity.java</url>
+          <line>281</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/MainActivity.java</url>
+          <line>253</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/MainActivity.java</url>
+          <line>278</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityConsultaPA.java</url>
+          <line>364</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityConsultaPA.java</url>
+          <line>253</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>4134</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/ActivityMenu.java</url>
+          <line>241</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/ActivityMenu.java</url>
+          <line>249</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>3963</line>
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>3830</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>3757</line>
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>3842</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityTrasladoUbi.java</url>
+          <line>451</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityTrasladoUbi.java</url>
+          <line>432</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityTrasladoUbi.java</url>
+          <line>477</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>5701</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityTrasladoUbi.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityTrasladoUbi.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>4197</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>5267</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>3572</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/MainActivity.java</url>
+          <line>216</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Imprecion/BluetoothPrint.java</url>
+          <line>374</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Imprecion/BluetoothPrint.java</url>
+          <line>276</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Imprecion/BluetoothPrint.java</url>
+          <line>290</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>4723</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>4645</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>4574</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>5157</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>5832</line>
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/RecepCompras.java</url>
+          <line>176</line>
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/RecepCompras.java</url>
+          <line>192</line>
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/RecepCompras.java</url>
+          <line>247</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/RecepCompras.java</url>
+          <line>340</line>
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Adapter/AdaptadorListProdRecepcion.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>5519</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>4989</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/almacen/alamacen202/Activity/ActivityLiberaciones.java</url>
+          <line>3287</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="listaUbicaciones.get(4)" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

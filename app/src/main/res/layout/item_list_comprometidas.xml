@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/AzulBack" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/AzulBack" />
+
+            <TextView
+                android:id="@+id/txtTipDocu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Documento"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/AzulBack" />
+
+            <TextView
+                android:id="@+id/txtFolio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Folio"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:background="@color/AzulBack" />
+
+            <TextView
+                android:id="@+id/txtCliente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Cliente"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/AzulBack" />
+
+            <TextView
+                android:id="@+id/txtCantidad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Cantidad"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/AzulBack" />
+
+            <TextView
+                android:id="@+id/txtFecha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Fecha"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/AzulBack" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/AzulBack" />
+
+
+</LinearLayout>
+
+
+

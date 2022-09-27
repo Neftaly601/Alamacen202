@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvClvProdDial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clave Producto"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/tvDescProdDial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripcion Producto"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/AzulBack"
+                android:maxLines="3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/AzulBack"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ORIGEN"
+                        android:textColor="@color/AzulBack"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+                    <Spinner
+                        android:id="@+id/spOrigen"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="#E6F1FB"
+                        android:spinnerMode="dropdown"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cant. Ubic."
+                        android:textColor="@color/AzulBack"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tvOrigen"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:backgroundTint="@color/ColorGris"
+                        android:background="@drawable/roundbutton"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/AzulBack"
+                        android:textSize="18dp"/>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSelecciona"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/AzulBack"
+                        android:text="Seleccionar"
+                        android:textSize="10dp"
+                        app:icon="@drawable/icon_seleccionar"
+                        app:iconSize="20dp"
+                        android:tooltipText="Actualización de cantidades"
+                        app:iconGravity="textStart"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DESTINO"
+                        android:textColor="@color/AzulBack"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+                    <Spinner
+                        android:id="@+id/spDestino"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="#E6F1FB"
+                        android:spinnerMode="dropdown"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cant. Ubic."
+                        android:textColor="@color/AzulBack"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/tvDestino"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:backgroundTint="@color/ColorGris"
+                        android:background="@drawable/roundbutton"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/AzulBack"
+                        android:textSize="18dp"/>
+
+                    <EditText
+                        android:id="@+id/txtDestino"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="#EBF1F0"
+                        android:inputType="phone"
+                        android:digits="0123456789"
+                        android:maxLength="10"
+                        android:textColor="#000000"
+                        android:hint="Cantidad a trasladar"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

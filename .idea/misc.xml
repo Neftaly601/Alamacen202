@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.161" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1845" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.1845" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.161" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.161" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/drawable/ic_launcher_background.xml" value="0.161" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout-v21/activity_invent_por_folio_comp.xml" value="0.33" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout-v21/activity_ubicacion_inventario.xml" value="0.22" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/activity_consulta_p.xml" value="0.22" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/activity_invent_por_prod.xml" value="0.25" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/activity_liberaciones.xml" value="0.33" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/activity_main.xml" value="0.1293918918918919" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/activity_menu.xml" value="0.22" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/activity_traslado_ubi.xml" value="0.18" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/dialog_info_cajas.xml" value="0.23783783783783785" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/dialog_info_listafolios.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/dialog_info_listaproductos.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/dialog_info_listaproductosrece.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/dialog_info_listarece.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/dialog_info_selecttypefol.xml" value="0.2" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/dialog_transf_ubic.xml" value="0.25" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/iteam_list_recepcion.xml" value="0.1293918918918919" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/item_list_cajas.xml" value="0.2" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/item_list_comprometidas.xml" value="0.33" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/item_list_existencias.xml" value="0.1293918918918919" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/item_list_folioslibera.xml" value="0.2" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/item_list_prod_ord_comp.xml" value="0.25" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/item_list_ubicacion.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/item_list_ubicacion2.xml" value="0.25" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout-v21/activity_invent_por_folio_comp.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_consulta_p.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_invent_por_prod.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_inventario.xml" value="0.25" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_liberaciones.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_menu.xml" value="0.22" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_recep_compras.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/dialog_info_listafolios.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/inventario_activity.xml" value="0.25" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/item_list_inventario.xml" value="0.25" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/item_list_prod_ord_comp.xml" value="0.33" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/item_list_resurt.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2305" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.2305" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/layout-v21/activity_invent_por_folio_comp.xml" value="0.25" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/layout-v26/activity_resurtido_picking.xml" value="0.25" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/layout/activity_invent_por_prod.xml" value="0.25" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/layout/activity_main.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/layout/activity_menu.xml" value="0.18" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/layout/activity_traslado_ubi.xml" value="0.23783783783783785" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/layout/dialog_resurtido.xml" value="0.33" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/layout/dialog_transf_ubic.xml" value="0.23783783783783785" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/layout/item_list_prod_ord_comp.xml" value="0.23783783783783785" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/layout/item_list_resurt.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

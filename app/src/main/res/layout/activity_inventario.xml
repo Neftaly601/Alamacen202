@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.ActivityInventario">
+    <include layout="@layout/action_bar_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/folio"
+                    android:textColorHint="@color/AzulBack"
+                    android:maxLines="1"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:startIconTint="@null">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtFolioInv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoSizeTextType="uniform"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:focusable="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        tools:ignore="TextContrastCheck"
+                        android:enabled="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/fechaI"
+                        android:textColorHint="@color/AzulBack"
+                        android:maxLines="1"
+                        app:boxBackgroundMode="outline"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:startIconTint="@null">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtFechaI"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeTextType="uniform"
+                            android:inputType="date"
+                            android:maxLines="1"
+                            android:imeOptions="actionDone"
+                            android:focusable="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            tools:ignore="TextContrastCheck"
+                            android:enabled="false"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/horaI"
+                        android:textColorHint="@color/AzulBack"
+                        android:maxLines="1"
+                        app:boxBackgroundMode="outline"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:startIconTint="@null"
+                        android:layout_marginLeft="5dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtHoraI"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeTextType="uniform"
+                            android:inputType="datetime"
+                            android:maxLines="1"
+                            android:imeOptions="actionDone"
+                            android:focusable="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            tools:ignore="TextContrastCheck"
+                            android:enabled="false"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/AzulBack"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/chbMan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/modo_manual"
+                    android:buttonTint="@color/AzulBack"
+                    android:checked="true">
+                </com.google.android.material.checkbox.MaterialCheckBox>
+
+                <!--<com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSincronizar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundbutton"
+                    android:backgroundTint="@color/AzulBack"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="14sp"
+                    android:text="@string/sincronizar"
+                    android:onClick="guardar"/>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/producto"
+                    android:textColorHint="@color/AzulBack"
+                    android:maxLines="1"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:startIconTint="@null">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtProducto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoSizeTextType="uniform"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:focusable="true"
+                        android:textSize="15sp"
+                        tools:ignore="TextContrastCheck"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/cantidad"
+                        android:textColorHint="@color/AzulBack"
+                        android:maxLines="1"
+                        app:boxBackgroundMode="outline"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtCant"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeTextType="uniform"
+                            android:inputType="phone"
+                            android:digits="0123456789"
+                            android:maxLength="10"
+                            android:textSize="15sp"
+                            android:text="1"
+                            android:imeOptions="actionDone"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--<com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSincronizar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundbutton"
+                    android:backgroundTint="@color/AzulBack"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="14sp"
+                    android:text="@string/sincronizar"
+                    android:onClick="guardar"/>-->
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnGuardar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:text="@string/guardar"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/ColorGris"
+                        android:textColor="@color/ColorWhite"
+                        android:textSize="14sp"
+                        android:enabled="false"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/AzulBack"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/ColorWhite"
+                        android:text="NUM"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/ColorWhite"
+                        android:text="PRODUCTO"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/ColorWhite"
+                        android:text="CANT"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvInventario"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"/>
+
+                <!--<com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/roundbutton"
+                    android:backgroundTint="@color/AzulBack"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="14sp"
+                    android:text="@string/termina"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

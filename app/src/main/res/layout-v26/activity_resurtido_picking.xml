@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.ActivityResurtidoPicking">
+
+    <include layout="@layout/action_bar_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Folio"
+                    android:maxLines="1"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:startIconTint="@null">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtFol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:digits="0123456789"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="@color/AzulBack"
+                        android:textSize="15dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>-->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBusca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@drawable/roundbutton"
+                android:backgroundTint="@color/Amarillo"
+                android:text="Buscar Productos"
+                android:textColor="@color/ColorWhite"
+                android:textSize="14sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+                <CheckBox
+                    android:id="@+id/chbUbic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ubicación"
+                    android:textColor="@color/AzulBack"
+                    android:buttonTint="@color/AzulBack"
+                    android:checked="true"/>
+                <CheckBox
+                    android:id="@+id/chbPFech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha"
+                    android:textColor="@color/AzulBack"
+                    android:buttonTint="@color/AzulBack"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/AzulBack"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="No."
+                    android:textSize="12dp"
+                    android:textColor="@color/ColorWhite"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Producto"
+                    android:textSize="12dp"
+                    android:textColor="@color/ColorWhite"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Ubic. Pick."
+                    android:textSize="12dp"
+                    android:textColor="@color/ColorWhite"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="Clasif."
+                    android:textSize="12dp"
+                    android:textColor="@color/ColorWhite"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:text="Rack"
+                    android:textSize="12dp"
+                    android:textColor="@color/ColorWhite"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPicking"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/AzulBack"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+
+                <TextView
+                    android:id="@+id/tvClvProdPick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Clave"
+                    android:textColor="@color/Amarillo"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvDescPick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Descripción Producto"
+                    android:textColor="@color/AzulBack"
+                    android:textSize="15dp"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/AzulBack"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Existencia Total Ubic."
+                    android:textColorHint="@color/AzulBack"
+                    android:maxLines="1"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:startIconTint="@null">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtSumUbiPick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters"
+                        android:clickable="true"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:focusable="false"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:enabled="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Existencia Almacén"
+                    android:textColorHint="@color/AzulBack"
+                    android:maxLines="1"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:startIconTint="@null">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtSumAlmPick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters"
+                        android:clickable="true"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:focusable="false"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:enabled="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:hint="Máximo"
+                            app:hintTextColor="@color/colorPrimary"
+                            android:maxLines="1"
+                            app:boxBackgroundMode="outline"
+                            app:boxCornerRadiusTopEnd="10dp"
+                            app:boxCornerRadiusTopStart="10dp"
+                            app:startIconTint="@null">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtMax"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:clickable="true"
+                                android:maxLines="1"
+                                android:imeOptions="actionDone"
+                                android:focusable="false"
+                                android:textSize="15dp"
+                                android:textColor="@color/AzulBack"
+                                android:enabled="false"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:hint="Minímo"
+                            app:hintTextColor="@color/colorPrimary"
+                            android:maxLines="1"
+                            app:boxBackgroundMode="outline"
+                            app:boxCornerRadiusTopEnd="10dp"
+                            app:boxCornerRadiusTopStart="10dp"
+                            app:startIconTint="@null">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtMin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:clickable="true"
+                                android:maxLines="1"
+                                android:imeOptions="actionDone"
+                                android:focusable="false"
+                                android:textSize="15dp"
+                                android:textColor="@color/AzulBack"
+                                android:enabled="false"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:hint="Ubicación Picking"
+                            app:hintTextColor="@color/colorPrimary"
+                            android:maxLines="1"
+                            app:boxBackgroundMode="outline"
+                            app:boxCornerRadiusTopEnd="10dp"
+                            app:boxCornerRadiusTopStart="10dp"
+                            app:startIconTint="@null">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtUbicPick"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@color/AzulBack"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnCamUbic"
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/roundbutton"
+                            android:backgroundTint="@color/ColorGris"
+                            app:icon="@drawable/icons8_almac_n_50"
+                            app:iconPadding="2dp"
+                            app:iconSize="18dp"
+                            app:iconGravity="textStart"
+                            android:tooltipText="Cambio Ubicación"
+                            android:enabled="false"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:hint="Cantidad en Ubic."
+                            app:boxBackgroundMode="outline"
+                            app:boxCornerRadiusTopEnd="10dp"
+                            app:boxCornerRadiusTopStart="10dp"
+                            app:startIconTint="@null">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtCantUbicPick"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:digits="0123456789"
+                                android:enabled="false"
+                                android:imeOptions="actionDone"
+                                android:inputType="phone"
+                                android:maxLength="5"
+                                android:maxLines="1"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvCantEmpq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"
+                        android:text="cantidad Empaque"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="8dp">
+                    <ImageView
+                        android:id="@+id/ivProdPick"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/logokepler"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnResurtir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:maxLines="1"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/ColorGris"
+                        android:enabled="false"
+                        android:text="Resurtir"
+                        android:textSize="8dp"
+                        android:textColor="@color/cardview_light_background"
+                        app:icon="@drawable/icons8_paquete"
+                        app:iconTint="@null"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="En Proceso"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:startIconTint="@null">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtCantAcum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:textSize="15dp"
+                        android:enabled="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAtras"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="1.6dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/roundbutton"
+                    android:maxLines="1"
+                    android:text="ANTERIOR"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="8dp"
+                    app:icon="@drawable/ic_baseline_arrow_back_24"
+                    app:iconGravity="start"
+                    app:iconTint="@null"
+                    android:backgroundTint="@color/ColorGris"
+                    android:enabled="false"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFinalizar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="1.6dp"
+                    android:background="@drawable/roundbutton"
+                    android:text="Terminar"
+                    android:textSize="8dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:backgroundTint="@color/ColorGris"
+                    android:enabled="false"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAdelante"
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:layout_gravity="start"
+                    android:maxLines="1"
+                    android:layout_marginLeft="1.6dp"
+                    android:background="@drawable/roundbutton"
+                    android:textSize="8dp"
+                    android:text="SIGUIENTE"
+                    android:textColor="@color/cardview_light_background"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/ic_baseline_arrow_forward_24"
+                    app:iconTint="@null"
+                    app:iconGravity="start"
+                    android:backgroundTint="@color/ColorGris"
+                    android:enabled="false"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

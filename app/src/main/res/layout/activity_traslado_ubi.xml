@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.ActivityTrasladoUbi">
+
+    <include layout="@layout/action_bar_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="5dp"
+               android:layout_marginTop="5dp"
+                android:background="@color/AzulBack" />
+
+
+            <TextView
+                android:id="@+id/Instruccionestxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#EC1515"
+                android:text="Escanear el producto...."
+                android:textSize="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/ProducL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TXTPRODVISI"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:hint="@string/producto"
+                    android:maxLines="1"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    android:layout_margin="10dp"
+                    app:startIconTint="@null">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EDProducto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textSize="10sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/Productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundbutton"
+                    android:backgroundTint="@color/AzulBack"
+                    android:onClick="BuquedaManual"
+                    android:text="Busqueda Manual"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/ubicacionedestino"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="horizontal">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TXTUBICAORIVISI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Ubicacion Origen"
+        android:maxLines="1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EDUbicacionOr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:editable="false"
+            android:inputType="textMultiLine"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Ubicaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="@color/AzulBack"
+        android:onClick="ubicaciones"
+        android:text="Ubicaciones"
+        android:textColor="@color/ColorWhite"
+        android:textSize="14sp" />
+
+</LinearLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TXTCANTIDADVISI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EDCANTIDAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:filterTouchesWhenObscured="false"
+                    android:fitsSystemWindows="false"
+                    android:editable="false"
+                    android:hint="Cantidad de traslado"
+                    android:inputType="numberDecimal"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TXTUBICADEST"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EDUbicacionDest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:hint="Ubicacion Destino"
+                    android:ems="10"
+                    android:editable="false"
+                    android:inputType="textMultiLine"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/AzulBack" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reubicación"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="center"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edProMostrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:hint="Producto"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:inputType="text"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:hint="Ubicacion Origen"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edUbiOrMostrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:inputType="text"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:hint="Cantidad"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edCantMostrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:inputType="number"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:hint="Ubicacion Destino"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edUbiDestiMostrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:inputType="text"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/productoImag"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_margin="10dp"
+                android:padding="16dp"
+                android:src="@drawable/logokepler" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

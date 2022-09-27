@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ActivityMenu">
+
+    <include layout="@layout/action_bar_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/AzulBack" />
+
+            <LinearLayout
+                android:id="@+id/ContImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/productoImag"
+                    android:layout_width="match_parent"
+                    android:layout_height="103dp"
+                    android:layout_margin="10dp"
+                    android:padding="16dp"
+                    android:src="@drawable/logokepler"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/AzulBack"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                   android:layout_margin="5dp"
+                    android:background="@drawable/roundbutton"
+                    android:backgroundTint="@color/AzulBack"
+                    android:gravity="center"
+                    android:onClick="Perfildelusuario"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="PERFIL"
+                        android:textColor="@color/ColorWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:contentDescription="Manos"
+                        android:src="@drawable/icon_user"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/AzulBack"
+                        android:gravity="center"
+                        android:onClick="ConsultaProductoMenu"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text="Consulta de Productos"
+                            android:textColor="@color/ColorWhite"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:contentDescription="Manos"
+                            android:src="@drawable/icons8_lista_64" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/AzulBack"
+                        android:gravity="center"
+                        android:onClick="LiberacionesMenu"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text="Surtido de Pedidos"
+                            android:textColor="@color/ColorWhite"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:contentDescription="Manos"
+                            android:src="@drawable/entregar" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/AzulBack"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:onClick="trasladoUbiMenu"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text="Cambio de Ubicación"
+                            android:textColor="@color/ColorWhite"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:contentDescription="Manos"
+                            android:src="@drawable/icons_carro_de_elevaci_n_aqu_" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/AzulBack"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:onClick="RepcionCompras"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:text="Recepcion de Compras"
+                            android:textColor="@color/ColorWhite"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:contentDescription="Manos"
+                            android:src="@drawable/icons_muro_de_pago" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/AzulBack"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:onClick="invXFolComp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:text="Inventariario por folio de compra"
+                            android:textColor="@color/ColorWhite"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:contentDescription="Manos"
+                            android:src="@drawable/icons_ubica_inv" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/AzulBack"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:onClick="invXProd"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:text="Inventario de localización por producto"
+                            android:textColor="@color/ColorWhite"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:contentDescription="Manos"
+                            android:src="@drawable/icons8_paquete" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/AzulBack"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:onClick="resurtPick">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:text="Resurtido de Picking"
+                            android:textColor="@color/ColorWhite"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:contentDescription="Manos"
+                            android:src="@drawable/icons8_caja_vac_a_96" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundbutton"
+                        android:backgroundTint="@color/AzulBack"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:onClick="inventario">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:text="Inventario"
+                            android:textColor="@color/ColorWhite"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:contentDescription="Manos"
+                            android:src="@drawable/icons8_caja_vac_a_96" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <Button
+                                        android:layout_width="0dp"
+                                        android:layout_height="139dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/roundbutton"
+                                        android:backgroundTint="@color/AzulBack"
+                                        android:padding="5dp"
+                                        android:text="Construccion"
+                                        android:textColor="@color/ColorWhite"
+                                        android:textSize="15sp"></Button>
+
+                                    <Button
+                                        android:layout_width="0dp"
+                                        android:layout_height="139dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/roundbutton"
+                                        android:backgroundTint="@color/AzulBack"
+                                        android:padding="5dp"
+                                        android:text="Construccion"
+                                        android:textColor="@color/ColorWhite"
+                                        android:textSize="15sp"></Button>
+                                </LinearLayout>
+                  -->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/cartable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#E1E1E1"
+        android:orientation="horizontal"
+        android:onClick="SelectFolio"
+        >
+        <TextView
+            android:id="@+id/txtUrgencia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Urge"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtFolio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Folio"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Fecha"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtCliente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Cliente"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"></TextView>
+
+
+
+        <TextView
+            android:id="@+id/txtReferencia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Referencia"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"></TextView>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

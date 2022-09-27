@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cerrarSe"
+        android:title="menu_CerrarSe"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        app:showAsAction="ifRoom" />
+
+    <item  android:title="Menu"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_settings_24">
+
+
+
+
+        <menu>
+
+            <item
+                android:title="ZEBRA"
+                android:id="@+id/idZebra"
+                android:icon="@drawable/icons8_zebra_48"
+                app:showAsAction="never"
+
+                />
+
+            <item
+                android:title="OTROS"
+                android:id="@+id/idOtros"
+                android:icon="@drawable/icons8_esc_ner_de_c_digo_de_barras_2_filled_50"
+                app:showAsAction="never"
+                />
+
+
+
+        </menu>
+    </item>
+    <item  android:title="Menu"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:id="@+id/MenuSPR"
+        app:showAsAction="always">
+        <menu>
+
+            <item
+                android:title="Rodatech"
+                android:id="@+id/RodatechMenu"
+                app:showAsAction="never"
+
+                />
+            <item
+                android:title="Partech"
+                android:id="@+id/PartechMenu"
+                app:showAsAction="never"
+
+                />
+            <item
+                android:title="Shark"
+                android:id="@+id/SharkMenu"
+                app:showAsAction="never"
+
+                />
+
+
+        </menu>
+    </item>
+
+
+
+</menu>

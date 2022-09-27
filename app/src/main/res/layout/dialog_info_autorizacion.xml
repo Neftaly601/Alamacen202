@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/AzulBack"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Autorizacion"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="20dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gifocult"
+                    android:layout_width="160dp"
+                    android:layout_height="149dp"
+                    android:src="@drawable/animation_200_kr571csi"></pl.droidsonroids.gif.GifImageView>
+                <TextView
+                    android:id="@+id/InstruccionesEscaneo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Escane su gafete..."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    ></TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TXTSHOWUSERNAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtUserNamED"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:autoSizeTextType="uniform"
+                        android:hint="Clave Escaneda"
+                        android:inputType="text"
+                        android:textSize="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/instruccionesAuto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Ingrese la cantidad de piezas a autorizar..."
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:visibility="gone"
+            ></TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TEXESCANERVISTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TEXTESCANER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:hint="Cantidad piezas a autorizar"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TEXSHOWCANTI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCantiAutoED"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:hint="Cantidad piezas a autorizar"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/RazonAutorizacionSHOW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Razon por la que se realiza la autorización..."
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:visibility="gone"></TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TEXSHOWRAZON"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RazonAutorizarEd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:hint="Razon"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/BUTTONADDCANT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="none"
+            android:background="@drawable/roundbutton"
+            android:backgroundTint="@color/AzulBack"
+            android:onClick="Bitacora"
+            android:text="ACEPTAR"
+            android:textColor="@color/ColorWhite"
+            android:textSize="14dp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/AzulBack"></View>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
