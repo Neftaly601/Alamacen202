@@ -32,18 +32,21 @@
         <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/item_list_prod_ord_comp.xml" value="0.25" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/item_list_ubicacion.xml" value="0.13243243243243244" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/Almacen/Proyecto Almacen/app/src/main/res/layout/item_list_ubicacion2.xml" value="0.25" />
-        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout-v21/activity_invent_por_folio_comp.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_consulta_p.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_invent_por_prod.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout-v21/activity_invent_por_folio_comp.xml" value="0.33" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout-v26/activity_resurtido_picking.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_consulta_p.xml" value="0.5" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_invent_por_prod.xml" value="0.33" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_inventario.xml" value="0.25" />
-        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_liberaciones.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_liberaciones.xml" value="0.33" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_menu.xml" value="0.22" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_recep_compras.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/activity_recep_trasp_mult_suc.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/dialog_info_listafolios.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/inventario_activity.xml" value="0.25" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/item_list_inventario.xml" value="0.25" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/item_list_prod_ord_comp.xml" value="0.33" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/item_list_resurt.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/PROGRAMADOR/Documents/AppAlmacenKepler/app/src/main/res/layout/item_list_traspaso.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2305" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.2305" />
         <entry key="..\:/Users/PROGRAMADOR/Documents/GitHub/AppAlmacenKepler/app/src/main/res/layout-v21/activity_invent_por_folio_comp.xml" value="0.25" />

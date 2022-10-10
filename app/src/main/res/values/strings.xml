@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Almacen Kepler</string>
     <string name="buscar">Buscar</string>
-    <string name="version_1_6">Version 1.7.2</string>
+    <string name="version_1_6">Version 1.9</string>
     <string name="usuario">Usuario</string>
     <string name="escanear">Escanear</string>
     <string name="comprometidas">COMPROMETIDAS</string>

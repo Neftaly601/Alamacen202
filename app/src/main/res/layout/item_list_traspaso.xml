@@ -10,12 +10,14 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/lyaout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:onClick="onClickLista">
             <TextView
                 android:id="@+id/tvN"
-                android:layout_width="50dp"
+                android:layout_width="55dp"
                 android:layout_height="wrap_content"
                 android:text="NUM"
                 android:textStyle="bold"

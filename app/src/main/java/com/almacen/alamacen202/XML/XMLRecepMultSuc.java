@@ -5,20 +5,24 @@ import org.xmlpull.v1.XmlSerializer;
 
 import java.io.IOException;
 
-public class XMLFolios extends SoapSerializationEnvelope {
+public class XMLRecepMultSuc extends SoapSerializationEnvelope {
 
     private String usuario;
     private String contrasena;
     private String suc;
+    private String prod;
+    private String cant;
 
-    public XMLFolios(int version) {
+    public XMLRecepMultSuc(int version) {
         super(version);
     }
 
-    public void XMLFol(String usuario, String contrasena,String suc) {
+    public void XMLTrasp(String usuario, String contrasena,String suc,String prod,String cant) {
         this.usuario = usuario;
         this.contrasena = contrasena;
         this.suc = suc;
+        this.prod = prod;
+        this.cant=cant;
     }//void
 
     @Override
@@ -30,7 +34,7 @@ public class XMLFolios extends SoapSerializationEnvelope {
         writer.setPrefix("", tem);
         writer.startTag(env, "Envelope");
         writer.startTag(env, "Body");
-        writer.startTag(tem, "FoliosRequest");
+        writer.startTag(tem, "RecepcionMultisucursalRequest");
 
 
         writer.startTag(tem, "Login");
@@ -43,16 +47,27 @@ public class XMLFolios extends SoapSerializationEnvelope {
         writer.endTag(tem, "Login");
 
 
-        writer.startTag(tem, "Folio");
+        writer.startTag(tem, "RecepMultiSuc");
 
-        writer.startTag(tem, "k_suc");
+        writer.startTag(tem, "k_Sucursal");
         writer.text(suc);
-        writer.endTag(tem, "k_suc");
+        writer.endTag(tem, "k_Sucursal");
 
-        writer.endTag(tem, "Folio");
+        writer.startTag(tem, "k_Producto");
+        writer.text(prod);
+        writer.endTag(tem, "k_Producto");
 
+        writer.startTag(tem, "k_Cantidad");
+        writer.text(cant);
+        writer.endTag(tem, "k_Cantidad");
 
-        writer.endTag(tem, "FoliosRequest");
+        writer.startTag(tem, "k_Usuario");
+        writer.text(usuario);
+        writer.endTag(tem, "k_Usuario");
+
+        writer.endTag(tem, "RecepMultiSuc");
+
+        writer.endTag(tem, "RecepcionMultisucursalRequest");
         writer.endTag(env, "Body");
         writer.endTag(env, "Envelope");
         writer.endDocument();

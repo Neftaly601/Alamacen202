@@ -5,17 +5,17 @@ import org.xmlpull.v1.XmlSerializer;
 
 import java.io.IOException;
 
-public class XMLFolios extends SoapSerializationEnvelope {
+public class XMLRecepConsul extends SoapSerializationEnvelope {
 
     private String usuario;
     private String contrasena;
     private String suc;
 
-    public XMLFolios(int version) {
+    public XMLRecepConsul(int version) {
         super(version);
     }
 
-    public void XMLFol(String usuario, String contrasena,String suc) {
+    public void XMLRecepCon(String usuario, String contrasena,String suc) {
         this.usuario = usuario;
         this.contrasena = contrasena;
         this.suc = suc;
@@ -30,7 +30,7 @@ public class XMLFolios extends SoapSerializationEnvelope {
         writer.setPrefix("", tem);
         writer.startTag(env, "Envelope");
         writer.startTag(env, "Body");
-        writer.startTag(tem, "FoliosRequest");
+        writer.startTag(tem, "RecepcionConsultaRequest");
 
 
         writer.startTag(tem, "Login");
@@ -43,16 +43,15 @@ public class XMLFolios extends SoapSerializationEnvelope {
         writer.endTag(tem, "Login");
 
 
-        writer.startTag(tem, "Folio");
+        writer.startTag(tem, "RecepConsul");
 
-        writer.startTag(tem, "k_suc");
+        writer.startTag(tem, "k_Sucursal");
         writer.text(suc);
-        writer.endTag(tem, "k_suc");
+        writer.endTag(tem, "k_Sucursal");
 
-        writer.endTag(tem, "Folio");
+        writer.endTag(tem, "RecepConsul");
 
-
-        writer.endTag(tem, "FoliosRequest");
+        writer.endTag(tem, "RecepcionConsultaRequest");
         writer.endTag(env, "Body");
         writer.endTag(env, "Envelope");
         writer.endDocument();

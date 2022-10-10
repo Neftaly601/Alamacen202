@@ -23,31 +23,55 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/folio"
-                    android:textColorHint="@color/AzulBack"
-                    android:maxLines="1"
-                    app:boxBackgroundMode="outline"
-                    app:boxCornerRadiusTopEnd="10dp"
-                    app:boxCornerRadiusTopStart="10dp"
-                    app:startIconTint="@null">
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txtFolioInv"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:autoSizeTextType="uniform"
-                        android:inputType="text"
+                        android:layout_weight="1"
+                        android:hint="@string/folio"
+                        android:textColorHint="@color/AzulBack"
                         android:maxLines="1"
-                        android:imeOptions="actionDone"
-                        android:focusable="false"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="15sp"
-                        tools:ignore="TextContrastCheck"
-                        android:enabled="false"/>
-                </com.google.android.material.textfield.TextInputLayout>
+                        app:boxBackgroundMode="outline"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:startIconTint="@null">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtFolioInv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeTextType="uniform"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:imeOptions="actionDone"
+                            android:focusable="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            tools:ignore="TextContrastCheck"
+                            android:enabled="false"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnFolios"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/roundbutton"
+                        android:lines="2"
+                        android:text="Buscar Folios"
+                        android:textColor="@color/ColorWhite"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="buscaFolios"/>
+                </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -131,8 +155,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/modo_manual"
-                    android:buttonTint="@color/AzulBack"
-                    android:checked="true">
+                    android:buttonTint="@color/AzulBack">
                 </com.google.android.material.checkbox.MaterialCheckBox>
 
                 <!--<com.google.android.material.button.MaterialButton
@@ -167,18 +190,28 @@
                     app:boxCornerRadiusTopEnd="10dp"
                     app:boxCornerRadiusTopStart="10dp"
                     app:startIconTint="@null">
+
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/txtProducto"
+                        android:id="@+id/txtProductoVi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:autoSizeTextType="uniform"
+                        android:enabled="false"
                         android:inputType="text"
-                        android:maxLines="1"
-                        android:imeOptions="actionDone"
-                        android:focusable="true"
-                        android:textSize="15sp"
-                        tools:ignore="TextContrastCheck"/>
+                        android:maxLines="1" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:autoSizeTextType="uniform"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:focusable="true"
+                    android:textSize="15sp"
+                    tools:ignore="TextContrastCheck" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -242,6 +275,19 @@
 
             </LinearLayout>
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSincronizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundbutton"
+                android:text="@string/sincronizar"
+                android:textColor="@color/ColorWhite"
+                android:textSize="14sp"
+                android:backgroundTint="@color/Amarillo"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -255,7 +301,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="40dp"
+                        android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textStyle="bold"

@@ -1,12 +1,14 @@
 package com.almacen.alamacen202;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -21,9 +23,11 @@ import com.almacen.alamacen202.Activity.ActivityConsultaPA;
 import com.almacen.alamacen202.Activity.ActivityInventario;
 import com.almacen.alamacen202.Activity.ActivityInventarioXProd;
 import com.almacen.alamacen202.Activity.ActivityLiberaciones;
+import com.almacen.alamacen202.Activity.ActivityRecepTraspMultSuc;
 import com.almacen.alamacen202.Activity.ActivityResurtidoPicking;
 import com.almacen.alamacen202.Activity.ActivityTrasladoUbi;
 import com.almacen.alamacen202.Activity.ActivityInventarioXfolioComp;
+import com.almacen.alamacen202.Sqlite.ConexionSQLiteHelper;
 import com.almacen.alamacen202.includes.MyToolbar;
 import com.squareup.picasso.Picasso;
 
@@ -33,10 +37,12 @@ public class ActivityMenu extends AppCompatActivity {
     ImageView imgVi;
     String StrServer;
     LinearLayout Conten;
-    private SharedPreferences preference;
-    private SharedPreferences.Editor editor;
+    private SharedPreferences preference,preferenceF;
+    private SharedPreferences.Editor editor,editor2;
     String codeBarClave;
 
+    private ConexionSQLiteHelper conn;
+    private SQLiteDatabase db;
 
 
     @Override
@@ -44,8 +50,13 @@ public class ActivityMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         MyToolbar.show(this, "Menu", false);
+
+        conn = new ConexionSQLiteHelper(ActivityMenu.this, "bd_INVENTARIO", null, 1);
+        db = conn.getReadableDatabase();
         preference = getSharedPreferences("Login", Context.MODE_PRIVATE);
+        preferenceF = getSharedPreferences("Folio", Context.MODE_PRIVATE);//para guardar folio
         editor = preference.edit();
+        editor2 = preferenceF.edit();
         Conten = findViewById(R.id.ContImage);
         imgVi = findViewById(R.id.productoImag);
         StrServer = preference.getString("Server", "null");
@@ -165,6 +176,15 @@ public class ActivityMenu extends AppCompatActivity {
 
 
     }
+    public void eliminarSqlySP() {//eliminar bd y shared preferences
+        try{
+            SQLiteDatabase db = conn.getWritableDatabase();
+            db.delete("INVENTARIOALM",null,null);
+            db.delete("INVENTARIO",null,null);
+            editor2.clear().commit();
+        }catch(Exception e){}
+    }//eliminarSql
+
     public void Perfildelusuario (View view) {
         Intent perfilusuario = new Intent(ActivityMenu.this, ActivityPerfil.class);
         startActivity(perfilusuario);
@@ -199,6 +219,9 @@ public class ActivityMenu extends AppCompatActivity {
     }//resurtPicking
     public void inventario(View v){
         Intent intent = new Intent(ActivityMenu.this, ActivityInventario.class);
+        startActivity(intent);
+    }public void traspasos(View v){
+        Intent intent = new Intent(ActivityMenu.this, ActivityRecepTraspMultSuc.class);
         startActivity(intent);
     }//inventario
 
@@ -255,16 +278,17 @@ public class ActivityMenu extends AppCompatActivity {
             if (id == R.id.cerrarSe) {
                 editor.clear();
                 editor.commit();
+                eliminarSqlySP();
                 Intent cerrar = new Intent(this, MainActivity.class);
                 startActivity(cerrar);
                 System.exit(0);
                 finish();
 
-
             }else if (id == R.id.RodatechMenu){
                 StrServer = "sprautomotive.servehttp.com:9090";
                 editor.putString("Server", StrServer);
                 editor.commit();
+                eliminarSqlySP();
                 overridePendingTransition(0, 0);
                 startActivity(getIntent());
                 overridePendingTransition(0, 0);
@@ -273,6 +297,7 @@ public class ActivityMenu extends AppCompatActivity {
                 StrServer = "sprautomotive.servehttp.com:9095";
                 editor.putString("Server", StrServer);
                 editor.commit();
+                eliminarSqlySP();
                 overridePendingTransition(0, 0);
                 startActivity(getIntent());
                 overridePendingTransition(0, 0);
@@ -281,6 +306,7 @@ public class ActivityMenu extends AppCompatActivity {
                 StrServer = "sprautomotive.servehttp.com:9080";
                 editor.putString("Server", StrServer);
                 editor.commit();
+                eliminarSqlySP();
                 overridePendingTransition(0, 0);
                 startActivity(getIntent());
                 overridePendingTransition(0, 0);
@@ -332,9 +358,9 @@ public class ActivityMenu extends AppCompatActivity {
             titulo.setTitle("!ERROR! CONEXION");
             titulo.show();
 
-        }
+        }//Eelse
 
 
         return super.onOptionsItemSelected(item);
-    }
-}
+    }//onoptionselkect
+}//activity menu

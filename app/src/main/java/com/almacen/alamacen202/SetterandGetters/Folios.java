@@ -2,13 +2,11 @@ package com.almacen.alamacen202.SetterandGetters;
 
 public class Folios {
     private String folio;
-    private String suc;
     private String fecha;
     private String hora;
 
-    public Folios(String folio, String suc, String fecha, String hora) {
+    public Folios(String folio, String fecha, String hora) {
         this.folio = folio;
-        this.suc = suc;
         this.fecha = fecha;
         this.hora = hora;
     }
@@ -19,14 +17,6 @@ public class Folios {
 
     public void setFolio(String folio) {
         this.folio = folio;
-    }
-
-    public String getSuc() {
-        return suc;
-    }
-
-    public void setSuc(String suc) {
-        this.suc = suc;
     }
 
     public String getFecha() {
